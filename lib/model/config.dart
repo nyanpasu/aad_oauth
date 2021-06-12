@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 /// DartDocs of parameters are mostly from those pages.
 class Config {
   /// Azure AD authorization URL.
-  String authorizationUrl;
+  Uri authorizationUrl;
 
   /// Azure AD token URL.
   Uri tokenUrl;
@@ -133,10 +133,10 @@ class Config {
       this.codeVerifier,
       this.userAgent}) {
     authorizationUrl = isB2C
-        ? 'https://$tenant.b2clogin.com/$tenant.onmicrosoft.com/$policy/oauth2/v2.0/authorize'
-        : 'https://login.microsoftonline.com/$tenant/oauth2/v2.0/authorize';
+        ? Uri.parse('https://$tenant.b2clogin.com/$tenant.onmicrosoft.com/$policy/oauth2/v2.0/authorize')
+        : Uri.parse('https://login.microsoftonline.com/$tenant/oauth2/v2.0/authorize');
     tokenUrl = isB2C
-        ? 'https://$tenant.b2clogin.com/$tenant.onmicrosoft.com/$policy/oauth2/v2.0/token'
-        : 'https://login.microsoftonline.com/$tenant/oauth2/v2.0/token';
+        ? Uri.parse('https://$tenant.b2clogin.com/$tenant.onmicrosoft.com/$policy/oauth2/v2.0/token')
+        : Uri.parse('https://login.microsoftonline.com/$tenant/oauth2/v2.0/token');
   }
 }

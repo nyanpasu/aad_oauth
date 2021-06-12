@@ -1,7 +1,7 @@
 import 'package:aad_oauth/model/config.dart';
 
 class AuthorizationRequest {
-  String url;
+  Uri url;
   String redirectUrl;
   Map<String, String> parameters;
   Map<String, String> headers;
