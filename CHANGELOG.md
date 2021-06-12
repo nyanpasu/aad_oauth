@@ -1,3 +1,9 @@
+## [0.3.0] - 20210613
+
+- Update http and add support
+- Add support for null safety
+- Breaking: all URIs changed to type Uri instead of String
+
 ## [0.2.2] - 2020xxxx
 
 - Add refreshIfAvailable flag to login() [#94](https://github.com/Earlybyte/aad_oauth/pull/94)
