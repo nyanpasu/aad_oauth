@@ -10,7 +10,7 @@ class Config {
   String authorizationUrl;
 
   /// Azure AD token URL.
-  String tokenUrl;
+  Uri tokenUrl;
 
   /// The tenant value in the path of the request can be used to control who can sign into the application.
   /// The allowed values are common, organizations, consumers, and tenant identifiers. Or Name of your Azure AD B2C tenant.

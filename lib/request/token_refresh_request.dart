@@ -1,7 +1,7 @@
 import 'package:aad_oauth/model/config.dart';
 
 class TokenRefreshRequestDetails {
-  String url;
+  Uri url;
   Map<String, String> params;
   Map<String, String> headers;
 
